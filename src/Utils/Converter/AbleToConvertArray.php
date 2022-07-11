@@ -2,7 +2,13 @@
 
 namespace App\Utils\Converter;
 
-class AbleToConvertArray
+interface AbleToConvertArray
 {
-
+    /**
+     * Convert multidimensional array into one dimensional
+     * @param array $config
+     * @param array $configArrays
+     * @return void
+     */
+    public function convertToOneDimensionalArray(array $config, array &$configArrays) : void;
 }
