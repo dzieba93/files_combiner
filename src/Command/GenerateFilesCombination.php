@@ -53,6 +53,12 @@ class GenerateFilesCombination extends Command
         $baseFileName = $input->getArgument('base');
         $paramsConfigFileName = $input->getArgument('params-config');
 
+        $mainDirExist = $this->fileSystem->exists(self::OUTPUT_FILES_PATH);
+
+        if (!$mainDirExist) {
+            $this->fileSystem->mkdir(self::OUTPUT_FILES_PATH);
+        }
+
         $bothExist = $this->fileSystem->exists([self::INPUT_FILES_PATH . $baseFileName, self::INPUT_FILES_PATH . $paramsConfigFileName]);
 
         if (!$bothExist) {

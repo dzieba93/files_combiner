@@ -7,10 +7,10 @@
 /public/bundles/
 /var/
 /vendor/
-/output_files/*
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+/output_files/
