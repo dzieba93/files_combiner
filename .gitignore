@@ -7,6 +7,7 @@
 /public/bundles/
 /var/
 /vendor/
+/output_files/
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
